@@ -33,7 +33,7 @@ const quizData = [
 
 let currentQuestionIndex = 0;
 let count = quizData.length * 5;
-// let count = 5;
+
 
 const constructOptions = function (options) {
   const optionsContainer = document.createElement("div");
