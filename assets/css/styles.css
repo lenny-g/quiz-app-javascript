@@ -1,9 +1,9 @@
 :root {
-  --prussian-blue: #003049ff;
-  --maximum-red: #d62828ff;
-  --orange: #f77f00ff;
-  --maximum-yellow-red: #fcbf49ff;
-  --lemon-meringue: #eae2b7ff;
+  --bdazzled-blue: #3d5a80ff;
+  --pale-cerulean: #98c1d9ff;
+  --light-cyan: #e0fbfcff;
+  --burnt-sienna: #ee6c4dff;
+  --gunmetal: #293241ff;
   --alert-success-text: #0f5132;
   --alert-success-background: #d1e7dd;
   --alert-success-border: #badbcc;
@@ -24,9 +24,9 @@ body {
 }
 
 .header {
-  color: var(--lemon-meringue);
+  color: var(--light-cyan);
   font-size: 1.4rem;
-  background-color: var(--prussian-blue);
+  background-color: var(--bdazzled-blue);
 }
 
 .nav-container {
@@ -41,7 +41,7 @@ body {
 
 .nav-item a {
   text-decoration: none;
-  color: var(--lemon-meringue);
+  color: var(--light-cyan);
 }
 
 .main {
@@ -69,16 +69,16 @@ body {
   font-size: 1rem;
   letter-spacing: 0.2rem;
   font-weight: 600;
-  background-color: var(--lemon-meringue);
-  color: #000;
+  background-color: var(--bdazzled-blue);
+  color: var(--light-cyan);
   min-width: 200px;
   margin-bottom: 1rem;
 }
 
 .btn:hover {
-  background-color: var(--maximum-yellow-red);
+  background-color: var(--light-cyan);
   cursor: pointer;
-  color: #fff;
+  color: var(--bdazzled-blue);
 }
 
 .question-container {
@@ -100,8 +100,8 @@ body {
 .option-item {
   margin: 1rem 0;
   padding: 1rem;
-  background-color: var(--prussian-blue);
-  color: #fff;
+  background-color: var(--bdazzled-blue);
+  color: var(--light-cyan);
   border: none;
   border-radius: 0.2rem;
   font-size: 1rem;
@@ -109,9 +109,9 @@ body {
 }
 
 .option-item:hover {
-  background-color: var(--maximum-yellow-red);
+  background-color: var(--light-cyan);
   cursor: pointer;
-  color: #000;
+  color: var(--bdazzled-blue);
 }
 
 .answer-alert {
@@ -136,8 +136,8 @@ body {
 
 .score-form {
   text-align: center;
-  background-color: var(--prussian-blue);
-  color: var(--lemon-meringue);
+  background-color: var(--bdazzled-blue);
+  color: var(--light-cyan);
   margin-top: 4rem;
 }
 
@@ -158,8 +158,8 @@ body {
 
 .game-over {
   text-align: center;
-  background-color: var(--prussian-blue);
-  color: var(--lemon-meringue);
+  background-color: var(--bdazzled-blue);
+  color: var(--light-cyan);
   margin-top: 4rem;
 }
 
@@ -173,12 +173,12 @@ body {
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem;
-  background-color: var(--maximum-yellow-red);
+  background-color: var(--bdazzled-blue);
   margin-bottom: 0.2rem;
 }
 
 .highscore-container:hover {
-  background-color: var(--lemon-meringue);
+  background-color: var(--light-cyan);
 }
 
 .btn-container {

@@ -1,23 +1,38 @@
-const movieQuestions = [
+const quizData = [
   {
-    title: "How many Harry Potter films are released?",
-    options: ["3", "6", "8", "10"],
-    correctOption: "8",
+    title: "Inside which HTML element do we put the JavaScript?",
+    options: ["<script>", "<javascript>", "<scripting>", "<js>"],
+    correctOption: "<script>",
   },
   {
-    title: "How many Back to the Future films are released?",
-    options: ["2", "3", "1", "5"],
-    correctOption: "3",
+    title: "Which operator is used to assign a value to a variable?",
+    options: ["x", "-", "=", "*"],
+    correctOption: "=",
   },
   {
-    title: "How many Rocky films are released?",
-    options: ["1", "3", "4", "6"],
-    correctOption: "6",
+    title: "Which event occurs when the user clicks on an HTML element?",
+    options: ["onClick", "onMouseOver", "onChange", "onMouseClick"],
+    correctOption: "onClick",
+  },
+  {
+    title: "How do you find the number with the highest value of x and y?",
+    options: ["Math.max(x, y)", "top(x, y)", "ceil(x, y)", "Math.ceil(x, y)"],
+    correctOption: "Math.max(x, y)",
+  },
+  {
+    title: "How can you add a comment in a JavaScript?",
+    options: [
+      "//This is a comment ",
+      "<!--This is a comment-->",
+      "'This is a comment",
+      "*This is a comment*",
+    ],
+    correctOption: "//This is a comment",
   },
 ];
 
 let currentQuestionIndex = 0;
-let count = movieQuestions.length * 5;
+let count = quizData.length * 5;
 // let count = 5;
 
 const constructOptions = function (options) {
@@ -211,7 +226,7 @@ const verifyAnswer = function (event) {
     currentQuestionIndex += 1;
 
     // check if last question
-    if (currentQuestionIndex < movieQuestions.length) {
+    if (currentQuestionIndex < quizData.length) {
       // render the next question
       removeQuestionContainer();
       renderQuestionContainer();
@@ -253,7 +268,7 @@ const constructQuestionContainer = function (question) {
 // render question container
 const renderQuestionContainer = function () {
   // get the current question
-  const currentQuestion = movieQuestions[currentQuestionIndex];
+  const currentQuestion = quizData[currentQuestionIndex];
 
   // construct the HTML for the question container
   const questionContainer = constructQuestionContainer(currentQuestion);
@@ -291,9 +306,9 @@ const renderGameOver = function () {
 const startTimer = function () {
   // declare the timer tick function
   const timerTick = function () {
-    if (currentQuestionIndex >= movieQuestions.length) {
+    if (currentQuestionIndex >= quizData.length) {
       clearInterval(timer);
-    } else if (count < 0) {
+    } else if (count <= 0) {
       clearInterval(timer);
       removeQuestionContainer();
       renderGameOver();
