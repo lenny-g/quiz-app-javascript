@@ -1,12 +1,15 @@
-# JAVASCRIPT QUIZ(COMPLETE)
+# JAVASCRIPT QUIZ [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-## PROJECT DESCRIPTION
+## TABLE OF CONTENTS 
+- [Description](#DESCRIPTION)
+- [Screenshots](#SCREENSHOTS)
+- [Links](#LINKS)
+- [Installation](#INSTALLATION)
+- [Contact](#CONTACT)
+
+## DESCRIPTION
 
 Objective was to create a timed, multiple answer quiz using Javascript.
-
-## LINK TO WORKING PAGE
-
-Click [here](https://lenny-g.github.io/quiz-app-javascript/) for finished webpage
 
 ## SCREENSHOTS
 
@@ -25,10 +28,13 @@ This is a screenshot showing an alert when a question is answered correctly
 This is a screenshot showing an alert when a question is answered incorrectly
 ![screenshot](./assets/screenshots/incorrect-alert.png)
 
-## WORK ACHIEVED :
+## LINKS
 
-- Created a timed javascript quiz that is responsive
-- Created multiple choice questions
-- Created alerts for wrong and correct answers
-- Created a form to enter and store highscores
-- Created a game over page
+Click [here](https://lenny-g.github.io/quiz-app-javascript/) for finished webpage
+
+
+
+## CONTACT 
+
+If you would like to contact me regarding this project please reach out to me either on 
+[LinkedIn](https://www.linkedin.com/in/leanne-gallagher/) or [GitHub](https://github.com/lenny-g)
